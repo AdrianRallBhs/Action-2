@@ -13,7 +13,7 @@ namespace Action2BlazorApp.Tests
             double c = 0;
             double rvalue = Convert.Convert.f2c(f);
             Assert.AreEqual(c, rvalue);
-            Assert.AreEqual(100, Convert.Convert.f2c(212));
+            Assert.AreEqual(100, Convert.Convert.f2c(210));
         }
 
         [TestMethod]
