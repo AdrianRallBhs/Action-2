@@ -1,7 +1,6 @@
-```mermaid
-  graph TD;
-      A-->B;
-      A-->C;
-      B-->D;
-      C-->D;
-```
+inputs:
+
+  who_to_greet:
+    description: "Greet John"
+    default: "Hello World"
+    required: false
