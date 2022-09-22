@@ -1,26 +1,30 @@
-name: build and test
+name: .NET Core
 on:
   push:
+    branches: [ main ]
   pull_request:
     branches: [ main ]
-    paths-ignore:
-    - 'README.md'
-env:
-  DOTNET_VERSION: '6.0.x'
 jobs:
-  build-and-test:
-    name: build-and-test
-    runs-on: windows-latest
-  
+  build:
+    runs-on: [ubuntu-latest, windows-latest]
     steps:
-    - uses: actions/checkout@v2
-    - name: Setup .NET
+    - name: Checkout GitHub actions
+      uses: actions/checkout@v2
+    - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: ${{ env.DOTNET_VERSION }}
+        dotnet-version: 6.0.x
     - name: Install dependencies
-      run: dotnet restore
-    - name: Build
-      run: dotnet build --configuration Release --no-restore
-    - name: Test
-      run: dotnet test --no-restore --verbosity normal
+      run: dotnet restore "./Action2BlazorApp"
+    - name: Build code
+      run: dotnet build "./Action2BlazorApp" --configuration Release --no-
+      restore
+    - name: Test code
+      run: dotnet test "./Action2BlazorApp" --no-restore --verbosity normal
+    - name: Publish application
+      run: dotnet publish "./Action2BlazorApp" -c Release -o Action2BlazorApp
+    - name: Upload Artifacts
+      uses: actions/upload-artifact@v2
+      with:
+       name: my-artifact
+       path: "./Action2BlazorApp"
