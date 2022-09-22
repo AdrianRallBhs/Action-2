@@ -4,6 +4,10 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+
+env:
+ APP_PATH: "./Action2BlazorApp"
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -15,15 +19,15 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Install dependencies
-      run: dotnet restore "./Action2BlazorApp"
+      run: dotnet restore ${{env.APP_PATH}}
     - name: Build code
-      run: dotnet build "./Action2BlazorApp" --configuration Release --no-restore
+      run: dotnet build ${{env.APP_PATH}} --configuration Release --no-restore
     - name: Test code
-      run: dotnet test "./Action2BlazorApp" --no-restore --verbosity normal
+      run: dotnet test${{env.APP_PATH}} --no-restore --verbosity normal
     #- name: Publish application
     #  run: dotnet publish "./Action2BlazorApp" -c Release -o Action2BlazorApp
     - name: Upload Artifacts
       uses: actions/upload-artifact@v2
       with:
        name: my-artifact
-       path: "./Action2BlazorApp"
+       path: ${{env.APP_PATH}}
