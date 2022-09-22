@@ -23,7 +23,7 @@ jobs:
     - name: Build code
       run: dotnet build ${{env.APP_PATH}} --configuration Release --no-restore
     - name: Test code
-      run: dotnet test${{env.APP_PATH}} --no-restore --verbosity normal
+      run: dotnet test ${{env.APP_PATH}} --no-restore --verbosity normal
     #- name: Publish application
     #  run: dotnet publish "./Action2BlazorApp" -c Release -o Action2BlazorApp
     - name: Upload Artifacts
