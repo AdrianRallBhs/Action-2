@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Adrian\\Documents\\GitHub\\Action-2\\Action2BlazorApp\\Action2BlazorApp\\Action2BlazorApp.csproj": {}
+    "C:\\Users\\Adrian\\Documents\\GitHub\\Action-2\\ConsoleAppAction\\ConsoleAppAction\\ConsoleAppAction.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Adrian\\Documents\\GitHub\\Action-2\\Action2BlazorApp\\Action2BlazorApp\\Action2BlazorApp.csproj": {
+    "C:\\Users\\Adrian\\Documents\\GitHub\\Action-2\\ConsoleAppAction\\ConsoleAppAction\\ConsoleAppAction.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Adrian\\Documents\\GitHub\\Action-2\\Action2BlazorApp\\Action2BlazorApp\\Action2BlazorApp.csproj",
-        "projectName": "Action2BlazorApp",
-        "projectPath": "C:\\Users\\Adrian\\Documents\\GitHub\\Action-2\\Action2BlazorApp\\Action2BlazorApp\\Action2BlazorApp.csproj",
+        "projectUniqueName": "C:\\Users\\Adrian\\Documents\\GitHub\\Action-2\\ConsoleAppAction\\ConsoleAppAction\\ConsoleAppAction.csproj",
+        "projectName": "ConsoleAppAction",
+        "projectPath": "C:\\Users\\Adrian\\Documents\\GitHub\\Action-2\\ConsoleAppAction\\ConsoleAppAction\\ConsoleAppAction.csproj",
         "packagesPath": "C:\\Users\\Adrian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Adrian\\Documents\\GitHub\\Action-2\\Action2BlazorApp\\Action2BlazorApp\\obj\\",
+        "outputPath": "C:\\Users\\Adrian\\Documents\\GitHub\\Action-2\\ConsoleAppAction\\ConsoleAppAction\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -50,9 +50,9 @@
               "target": "Package",
               "version": "[2.9.1, )"
             },
-            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+            "GitHubActionsDotNet": {
               "target": "Package",
-              "version": "[1.14.0, )"
+              "version": "[1.0.4, )"
             }
           },
           "imports": [
@@ -66,9 +66,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

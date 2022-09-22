@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "q/6vJKg8wmrgM+T6t3jcLovth/1Uf7t/YgNGf6O00BEKQKkw+3oKRS6fZlMhT4zrExgpCoeZCKir3Q3r2SZseg==",
+  "dgSpecHash": "9QxZKikk9/KTrUIEnyH0uxoR2yVa92fBi8Y2DTvNiMvL115/ChhzqluBdSpoRwuQvrGiKmrjrG0a+835PuE8IQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Adrian\\Documents\\GitHub\\Action-2\\Action2BlazorApp\\Action2BlazorApp.Tests\\Action2BlazorApp.Tests.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Adrian\\.nuget\\packages\\commandlineparser\\2.9.1\\commandlineparser.2.9.1.nupkg.sha512",
     "C:\\Users\\Adrian\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\Adrian\\.nuget\\packages\\microsoft.codecoverage\\16.11.0\\microsoft.codecoverage.16.11.0.nupkg.sha512",
     "C:\\Users\\Adrian\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
