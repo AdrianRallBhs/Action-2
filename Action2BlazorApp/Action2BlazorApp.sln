@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.32407.343
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Action2BlazorApp", "Action2BlazorApp\Action2BlazorApp.csproj", "{AB8D130D-4D5D-491B-A45F-F8B43F5EBD0E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Action2BlazorApp.Tests", "Action2BlazorApp.Tests\Action2BlazorApp.Tests.csproj", "{7024EAD2-96B7-43A7-973E-3F300F3F0373}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{AB8D130D-4D5D-491B-A45F-F8B43F5EBD0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB8D130D-4D5D-491B-A45F-F8B43F5EBD0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB8D130D-4D5D-491B-A45F-F8B43F5EBD0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7024EAD2-96B7-43A7-973E-3F300F3F0373}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7024EAD2-96B7-43A7-973E-3F300F3F0373}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7024EAD2-96B7-43A7-973E-3F300F3F0373}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7024EAD2-96B7-43A7-973E-3F300F3F0373}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
