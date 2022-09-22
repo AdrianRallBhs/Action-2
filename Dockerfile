@@ -3,7 +3,7 @@ FROM mcr.microsoft.com/dotnet/sdk:6.0 as build-env
 
 # Copy everything and publish the release (publish implicitly restores and builds)
 COPY . ./
-RUN dotnet publish ./Action2BlazorApp/Action2BlazorApp/Action2BlazorApp.cproj -c Release -o out --no-self-contained
+RUN dotnet publish ./Action2BlazorApp/Action2BlazorApp/Action2BlazorApp.csproj -c Release -o out --no-self-contained
 
 # Label the container
 LABEL maintainer="Adrian Rall <adrian@asda4.de>"
