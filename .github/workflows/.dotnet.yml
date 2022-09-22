@@ -17,8 +17,7 @@ jobs:
     - name: Install dependencies
       run: dotnet restore "./Action2BlazorApp"
     - name: Build code
-      run: dotnet build "./Action2BlazorApp" --configuration Release --no-
-      restore
+      run: dotnet build "./Action2BlazorApp" --configuration Release --no-restore
     - name: Test code
       run: dotnet test "./Action2BlazorApp" --no-restore --verbosity normal
     - name: Publish application
